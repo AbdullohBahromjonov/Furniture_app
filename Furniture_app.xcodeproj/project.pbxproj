@@ -14,6 +14,8 @@
 		E5400B95289438D100156AA2 /* Furniture_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5400B94289438D100156AA2 /* Furniture_appTests.swift */; };
 		E5400B9F289438D100156AA2 /* Furniture_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5400B9E289438D100156AA2 /* Furniture_appUITests.swift */; };
 		E5400BA1289438D100156AA2 /* Furniture_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5400BA0289438D100156AA2 /* Furniture_appUITestsLaunchTests.swift */; };
+		E5400BB12894418500156AA2 /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5400BAF2894418500156AA2 /* PlayfairDisplay-Bold.ttf */; };
+		E5400BB22894418500156AA2 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5400BB02894418500156AA2 /* PlayfairDisplay-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		E5400B9A289438D100156AA2 /* Furniture_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Furniture_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5400B9E289438D100156AA2 /* Furniture_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Furniture_appUITests.swift; sourceTree = "<group>"; };
 		E5400BA0289438D100156AA2 /* Furniture_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Furniture_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E5400BAD2894415800156AA2 /* Furniture-app-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Furniture-app-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E5400BAF2894418500156AA2 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		E5400BB02894418500156AA2 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +99,8 @@
 		E5400B82289438D000156AA2 /* Furniture_app */ = {
 			isa = PBXGroup;
 			children = (
+				E5400BAD2894415800156AA2 /* Furniture-app-Info.plist */,
+				E5400BAE2894418500156AA2 /* Fonts */,
 				E5400B83289438D000156AA2 /* Furniture_appApp.swift */,
 				E5400B85289438D000156AA2 /* ContentView.swift */,
 				E5400B87289438D100156AA2 /* Assets.xcassets */,
@@ -125,6 +132,15 @@
 				E5400BA0289438D100156AA2 /* Furniture_appUITestsLaunchTests.swift */,
 			);
 			path = Furniture_appUITests;
+			sourceTree = "<group>";
+		};
+		E5400BAE2894418500156AA2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E5400BAF2894418500156AA2 /* PlayfairDisplay-Bold.ttf */,
+				E5400BB02894418500156AA2 /* PlayfairDisplay-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +247,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5400BB22894418500156AA2 /* PlayfairDisplay-Regular.ttf in Resources */,
+				E5400BB12894418500156AA2 /* PlayfairDisplay-Bold.ttf in Resources */,
 				E5400B8B289438D100156AA2 /* Preview Assets.xcassets in Resources */,
 				E5400B88289438D100156AA2 /* Assets.xcassets in Resources */,
 			);
@@ -420,6 +438,7 @@
 				DEVELOPMENT_TEAM = 6J9XRFD286;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Furniture-app-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +468,7 @@
 				DEVELOPMENT_TEAM = 6J9XRFD286;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Furniture-app-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
