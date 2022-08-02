@@ -16,6 +16,13 @@
 		E5400BA1289438D100156AA2 /* Furniture_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5400BA0289438D100156AA2 /* Furniture_appUITestsLaunchTests.swift */; };
 		E5400BB12894418500156AA2 /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5400BAF2894418500156AA2 /* PlayfairDisplay-Bold.ttf */; };
 		E5400BB22894418500156AA2 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5400BB02894418500156AA2 /* PlayfairDisplay-Regular.ttf */; };
+		E5400BB52896568800156AA2 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5400BB42896568800156AA2 /* HomeScreen.swift */; };
+		E5400BB8289656E800156AA2 /* BottomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5400BB7289656E800156AA2 /* BottomNavBar.swift */; };
+		E5400BBA289656FD00156AA2 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5400BB9289656FD00156AA2 /* ProductCardView.swift */; };
+		E5400BBC2896570C00156AA2 /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5400BBB2896570C00156AA2 /* CategoryItemView.swift */; };
+		E5400BBE289659BE00156AA2 /* AppBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5400BBD289659BE00156AA2 /* AppBarView.swift */; };
+		E5400BC0289659EC00156AA2 /* TagLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5400BBF289659EC00156AA2 /* TagLineView.swift */; };
+		E5400BC228965A0E00156AA2 /* SearchAndScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5400BC128965A0E00156AA2 /* SearchAndScanView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		E5400BAD2894415800156AA2 /* Furniture-app-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Furniture-app-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E5400BAF2894418500156AA2 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
 		E5400BB02894418500156AA2 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		E5400BB42896568800156AA2 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		E5400BB7289656E800156AA2 /* BottomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavBar.swift; sourceTree = "<group>"; };
+		E5400BB9289656FD00156AA2 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
+		E5400BBB2896570C00156AA2 /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
+		E5400BBD289659BE00156AA2 /* AppBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBarView.swift; sourceTree = "<group>"; };
+		E5400BBF289659EC00156AA2 /* TagLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLineView.swift; sourceTree = "<group>"; };
+		E5400BC128965A0E00156AA2 /* SearchAndScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAndScanView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +113,11 @@
 		E5400B82289438D000156AA2 /* Furniture_app */ = {
 			isa = PBXGroup;
 			children = (
-				E5400BAD2894415800156AA2 /* Furniture-app-Info.plist */,
+				E5400BB32896566800156AA2 /* View */,
 				E5400BAE2894418500156AA2 /* Fonts */,
 				E5400B83289438D000156AA2 /* Furniture_appApp.swift */,
-				E5400B85289438D000156AA2 /* ContentView.swift */,
 				E5400B87289438D100156AA2 /* Assets.xcassets */,
+				E5400BAD2894415800156AA2 /* Furniture-app-Info.plist */,
 				E5400B89289438D100156AA2 /* Preview Content */,
 			);
 			path = Furniture_app;
@@ -141,6 +155,29 @@
 				E5400BB02894418500156AA2 /* PlayfairDisplay-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E5400BB32896566800156AA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5400BB6289656CB00156AA2 /* Home Screen */,
+				E5400B85289438D000156AA2 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E5400BB6289656CB00156AA2 /* Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				E5400BB42896568800156AA2 /* HomeScreen.swift */,
+				E5400BB7289656E800156AA2 /* BottomNavBar.swift */,
+				E5400BB9289656FD00156AA2 /* ProductCardView.swift */,
+				E5400BBB2896570C00156AA2 /* CategoryItemView.swift */,
+				E5400BBD289659BE00156AA2 /* AppBarView.swift */,
+				E5400BBF289659EC00156AA2 /* TagLineView.swift */,
+				E5400BC128965A0E00156AA2 /* SearchAndScanView.swift */,
+			);
+			path = "Home Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,8 +312,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5400BB8289656E800156AA2 /* BottomNavBar.swift in Sources */,
+				E5400BBE289659BE00156AA2 /* AppBarView.swift in Sources */,
 				E5400B86289438D000156AA2 /* ContentView.swift in Sources */,
+				E5400BC0289659EC00156AA2 /* TagLineView.swift in Sources */,
 				E5400B84289438D000156AA2 /* Furniture_appApp.swift in Sources */,
+				E5400BC228965A0E00156AA2 /* SearchAndScanView.swift in Sources */,
+				E5400BBC2896570C00156AA2 /* CategoryItemView.swift in Sources */,
+				E5400BB52896568800156AA2 /* HomeScreen.swift in Sources */,
+				E5400BBA289656FD00156AA2 /* ProductCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -417,7 +461,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -444,6 +488,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,6 +519,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
