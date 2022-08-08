@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E521A15828A139C8004E142A /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E521A15728A139C8004E142A /* DetailScreen.swift */; };
+		E521A15A28A139E5004E142A /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E521A15928A139E5004E142A /* DescriptionView.swift */; };
+		E521A15C28A139FE004E142A /* ColorDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E521A15B28A139FE004E142A /* ColorDotView.swift */; };
+		E521A15E28A13AD1004E142A /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E521A15D28A13AD1004E142A /* CounterView.swift */; };
 		E5400B84289438D000156AA2 /* Furniture_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5400B83289438D000156AA2 /* Furniture_appApp.swift */; };
 		E5400B86289438D000156AA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5400B85289438D000156AA2 /* ContentView.swift */; };
 		E5400B88289438D100156AA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5400B87289438D100156AA2 /* Assets.xcassets */; };
@@ -43,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E521A15728A139C8004E142A /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		E521A15928A139E5004E142A /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
+		E521A15B28A139FE004E142A /* ColorDotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDotView.swift; sourceTree = "<group>"; };
+		E521A15D28A13AD1004E142A /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		E5400B80289438D000156AA2 /* Furniture_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Furniture_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5400B83289438D000156AA2 /* Furniture_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Furniture_appApp.swift; sourceTree = "<group>"; };
 		E5400B85289438D000156AA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +98,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E521A15628A139B0004E142A /* Detail Screen */ = {
+			isa = PBXGroup;
+			children = (
+				E521A15728A139C8004E142A /* DetailScreen.swift */,
+				E521A15928A139E5004E142A /* DescriptionView.swift */,
+				E521A15B28A139FE004E142A /* ColorDotView.swift */,
+				E521A15D28A13AD1004E142A /* CounterView.swift */,
+			);
+			path = "Detail Screen";
+			sourceTree = "<group>";
+		};
 		E5400B77289438D000156AA2 = {
 			isa = PBXGroup;
 			children = (
@@ -160,8 +179,9 @@
 		E5400BB32896566800156AA2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E5400BB6289656CB00156AA2 /* Home Screen */,
 				E5400B85289438D000156AA2 /* ContentView.swift */,
+				E521A15628A139B0004E142A /* Detail Screen */,
+				E5400BB6289656CB00156AA2 /* Home Screen */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -312,12 +332,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E521A15828A139C8004E142A /* DetailScreen.swift in Sources */,
 				E5400BB8289656E800156AA2 /* BottomNavBar.swift in Sources */,
+				E521A15C28A139FE004E142A /* ColorDotView.swift in Sources */,
 				E5400BBE289659BE00156AA2 /* AppBarView.swift in Sources */,
 				E5400B86289438D000156AA2 /* ContentView.swift in Sources */,
 				E5400BC0289659EC00156AA2 /* TagLineView.swift in Sources */,
 				E5400B84289438D000156AA2 /* Furniture_appApp.swift in Sources */,
 				E5400BC228965A0E00156AA2 /* SearchAndScanView.swift in Sources */,
+				E521A15E28A13AD1004E142A /* CounterView.swift in Sources */,
+				E521A15A28A139E5004E142A /* DescriptionView.swift in Sources */,
 				E5400BBC2896570C00156AA2 /* CategoryItemView.swift in Sources */,
 				E5400BB52896568800156AA2 /* HomeScreen.swift in Sources */,
 				E5400BBA289656FD00156AA2 /* ProductCardView.swift in Sources */,

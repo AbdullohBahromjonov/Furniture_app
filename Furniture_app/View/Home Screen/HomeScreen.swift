@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct HomeScreen: View {
-    @State private var selectedIndex: Int = 0
+    @State private var selectedIndex = 0
+    @State var showDetailScreen = false
+    @State var  selectedProduct = ""
     private let categories = ["All", "Chair", "Sofa", "Lamp", "Kitchen", "Table"]
+    private let products = ["chair_1", "chair_2", "chair_3", "chair_4"]
     
     var body: some View {
         ZStack {
@@ -58,8 +61,15 @@ struct HomeScreen: View {
                         .padding(.top)
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
-                            ForEach(0..<4) { index in
-                                ProductCardView(image: Image("chair_\(index+1)"), size: 180)
+                            ForEach(products, id: \.self) { product in
+                                ProductCardView(image: Image(product), size: 180)
+                                    .onTapGesture {
+                                        showDetailScreen.toggle()
+                                        selectedProduct = product
+                                    }
+                                    .fullScreenCover(isPresented: $showDetailScreen) {
+                                        DetailScreen(image: $selectedProduct)
+                                    }
                             }
                             .padding(.trailing)
                         }
