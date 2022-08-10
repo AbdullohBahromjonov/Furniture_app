@@ -15,6 +15,10 @@ struct BottomNavBarItem: View {
             action: action,
             label: {
                 image
+                    .resizable()
+                    .foregroundColor(Color("Primary"))
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: 26)
                     .frame(maxWidth: .infinity)
             }
         )
@@ -23,7 +27,7 @@ struct BottomNavBarItem: View {
 
 struct BottomNavBarItem_Previews: PreviewProvider {
     static var previews: some View {
-        BottomNavBarItem(image: Image("Home"), action: {})
+        BottomNavBarItem(image: Image("shop"), action: {})
             .padding()
             .previewLayout(.sizeThatFits)
             .background(Color("Bg"))

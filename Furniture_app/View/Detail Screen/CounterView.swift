@@ -52,5 +52,7 @@ struct CounterView: View {
 struct CounterView_Previews: PreviewProvider {
     static var previews: some View {
         CounterView()
+            .padding()
+            .previewLayout(.sizeThatFits)
     }
 }
